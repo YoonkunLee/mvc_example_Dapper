@@ -1,0 +1,5 @@
+ .vs/
+# Connect Data file #
+################
+login.cs
+*.csproj
