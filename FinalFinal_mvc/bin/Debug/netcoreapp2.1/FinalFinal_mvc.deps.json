@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "a3995bf75a4bfbbd9252264e31706594ac1d4348"
+    "signature": "a0f7e71cb6db4f8feb818068c105ba4f721ce6e1"
   },
   "compilationOptions": {
     "defines": [
@@ -27,6 +27,7 @@
           "Dapper": "2.0.30",
           "Microsoft.AspNetCore.All": "2.1.0",
           "Microsoft.NETCore.App": "2.1.0",
+          "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.6",
           "MySql.Data": "8.0.19",
           "jQuery": "3.4.1"
         },
@@ -82,6 +83,11 @@
         }
       },
       "jQuery/3.4.1": {},
+      "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+        "dependencies": {
+          "jQuery": "3.4.1"
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.1.0",
@@ -3965,6 +3971,13 @@
       "sha512": "sha512-vDD5O2nuVN2rF0rTASFSJNM5ef50niEP5HsXDQyXPPZH1rBaAaLtCutHG5wvXOPmrQw+MEZHOcOk9kYmdnL/Xw==",
       "path": "jquery/3.4.1",
       "hashPath": "jquery.3.4.1.nupkg.sha512"
+    },
+    "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-udg7ZBszgqxloQ+ShJRONKQAzPnJIlUhKZB+AIvZdKh7CDc5Nms69T9X0hN5i+NqMmQE6njkzdCcEb16lPdJTw==",
+      "path": "microsoft.jquery.unobtrusive.ajax/3.2.6",
+      "hashPath": "microsoft.jquery.unobtrusive.ajax.3.2.6.nupkg.sha512"
     },
     "Microsoft.NETCore.App/2.1.0": {
       "type": "package",

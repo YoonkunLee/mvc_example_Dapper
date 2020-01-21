@@ -2898,6 +2898,12 @@
           "lib/netstandard1.4/Microsoft.IdentityModel.Xml.dll": {}
         }
       },
+      "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.8.0"
+        }
+      },
       "Microsoft.Net.Http.Headers/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -8237,6 +8243,19 @@
         "lib/netstandard1.4/Microsoft.IdentityModel.Xml.xml",
         "microsoft.identitymodel.xml.5.2.0.nupkg.sha512",
         "microsoft.identitymodel.xml.nuspec"
+      ]
+    },
+    "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+      "sha512": "udg7ZBszgqxloQ+ShJRONKQAzPnJIlUhKZB+AIvZdKh7CDc5Nms69T9X0hN5i+NqMmQE6njkzdCcEb16lPdJTw==",
+      "type": "package",
+      "path": "microsoft.jquery.unobtrusive.ajax/3.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery.unobtrusive-ajax.js",
+        "Content/Scripts/jquery.unobtrusive-ajax.min.js",
+        "microsoft.jquery.unobtrusive.ajax.3.2.6.nupkg.sha512",
+        "microsoft.jquery.unobtrusive.ajax.nuspec"
       ]
     },
     "Microsoft.Net.Http.Headers/2.1.0": {
@@ -14384,6 +14403,7 @@
       "Dapper >= 2.0.30",
       "Microsoft.AspNetCore.All >= 2.1.0",
       "Microsoft.NETCore.App >= 2.1.0",
+      "Microsoft.jQuery.Unobtrusive.Ajax >= 3.2.6",
       "MySql.Data >= 8.0.19",
       "jQuery >= 3.4.1"
     ]
@@ -14395,11 +14415,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yoonkun Lee\\Desktop\\두견\\mvc_example\\FinalFinal_mvc\\FinalFinal_mvc.csproj",
+      "projectUniqueName": "C:\\Users\\Yoonkun Lee\\Desktop\\YK_Folder\\mvc_example_Dapper\\FinalFinal_mvc\\FinalFinal_mvc.csproj",
       "projectName": "FinalFinal_mvc",
-      "projectPath": "C:\\Users\\Yoonkun Lee\\Desktop\\두견\\mvc_example\\FinalFinal_mvc\\FinalFinal_mvc.csproj",
+      "projectPath": "C:\\Users\\Yoonkun Lee\\Desktop\\YK_Folder\\mvc_example_Dapper\\FinalFinal_mvc\\FinalFinal_mvc.csproj",
       "packagesPath": "C:\\Users\\Yoonkun Lee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yoonkun Lee\\Desktop\\두견\\mvc_example\\FinalFinal_mvc\\obj\\",
+      "outputPath": "C:\\Users\\Yoonkun Lee\\Desktop\\YK_Folder\\mvc_example_Dapper\\FinalFinal_mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14441,6 +14461,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.jQuery.Unobtrusive.Ajax": {
+            "target": "Package",
+            "version": "[3.2.6, )"
           },
           "MySql.Data": {
             "target": "Package",

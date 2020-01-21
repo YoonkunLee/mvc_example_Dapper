@@ -16,25 +16,29 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var user in Model)
+        @foreach (var user in Model)
         {
-        <tr>
-            <td>@user.id</td>
-            <td>@user.UserName</td>
-            <td>@user.Gender</td>
-            <td>@user.Email</td>
-            <td>@user.Date</td>
-            <td>
-                @*<form class="form-horizontal" method="post" asp-controller="Customer" >
-            <ul class="nav navbar-nav">
-                <li><a asp-area="" asp-controller="Customer" asp-action="Update(@user.id)" >Update</a></li>
-                <li><a asp-area="" asp-controller="Customer" asp-action="Delete" id=@user.id>Delete</a></li>
-            </ul>
-        </form>*@
-                @Html.ActionLink("Update", "Update", "Customer", new { @id = @user.id, @class = "btn btn btn-primary" })
-                @Html.ActionLink("Delete", "Delete", "Customer", new { @id = @user.id, @class = "btn btn btn-primary" })
-            </td>
-        </tr>
+            <tr>
+                <td>@user.id</td>
+                <td>@user.UserName</td>
+                <td>@user.Gender</td>
+                <td>@user.Email</td>
+                <td>@user.Date</td>
+                <td>
+                    @*<form class="form-horizontal" method="post" asp-controller="Customer" >
+                            <ul class="nav navbar-nav">
+                                <li><a asp-area="" asp-controller="Customer" asp-action="Update(@user.id)" >Update</a></li>
+                                <li><a asp-area="" asp-controller="Customer" asp-action="Delete" id=@user.id>Delete</a></li>
+                            </ul>
+                        </form>*@
+                    <a class="btn btn-primary btn-sm" href='@Url.Action("Update", "Customer", new { @id = @user.id })'>Update</a>
+                    <a class="btn btn-danger btn-sm" onclick="Delete('@Url.Action("Delete", "Customer", new { @id = @user.id })')">Delete</a><i class="fa fa-trash fa-lg"></i>
+                </td>
+            </tr>
         }
     </tbody>
 </table>
+
+
+@*Html.ActionLink("Delete", "Delete", "Customer", new { @id = @user.id, @class = "btn btn btn-primary" })*@
+@*Html.ActionLink("Update", "Update", "Customer", new { @id = @user.id, @class = "btn btn btn-primary" })*@

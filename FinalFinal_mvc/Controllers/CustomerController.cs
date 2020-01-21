@@ -9,7 +9,6 @@ using FinalFinal_mvc.DataContext;
 using FinalFinal_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 
-
 namespace FinalFinal_mvc.Controllers
 {
     public class CustomerController : Controller
@@ -122,14 +121,15 @@ namespace FinalFinal_mvc.Controllers
             }
         }
 
-        public IActionResult Delete(int id)
+       
+        public JsonResult Delete(int id)
         {
             using (var db = new SqlConnection(Connection))
             {
                 string myCommand = @"Delete From Users Where id = '" + id + "';";
                 db.Execute(myCommand);
             }
-            return ReDirectToIndex();
+            return Json(new { success = true });
 
         }
 
