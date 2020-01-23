@@ -50,9 +50,9 @@ namespace FinalFinal_mvc
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseCors("CorsPolicy");
-            app.UseSignalR(route =>
+            app.UseSignalR(routes =>
             {
-                route.MapHub<ChatHub>("/chatHub");
+                routes.MapHub<ChatHub>("/chatHub");
             });
             app.UseMvc(routes =>
             {
