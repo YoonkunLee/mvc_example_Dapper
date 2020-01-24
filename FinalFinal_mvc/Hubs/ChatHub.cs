@@ -12,5 +12,10 @@ namespace FinalFinal_mvc.Hubs
         {
             await Clients.All.SendAsync("ForwardToClients", user, message);
         }
+
+        public async Task SendMessage1(string user, string email, string gender, string date)
+        {
+            await Clients.All.SendAsync("ForwardToClients", user, gender, email, date);
+        }
     }
 }
